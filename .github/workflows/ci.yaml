@@ -1,17 +1,7 @@
 name: CI
 
 on:
-  pull_request:
-    branches:
-    - '*'
-  push:
-    branches:
-    - main
-
-defaults:
-  run:
-    shell: bash
-
+  repository_dispatch
 jobs:
   all:
     name: All
