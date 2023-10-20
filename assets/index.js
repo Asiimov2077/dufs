@@ -99,7 +99,7 @@ function ready() {
   addBreadcrumb(DATA.href, DATA.uri_prefix);
 
   if (DATA.kind == "Index") {
-    document.title = `Index of ${DATA.href} - Dufs`;
+    document.title = `中通客车信息公开 - ${DATA.href}`;
     document.querySelector(".index-page").classList.remove("hidden");
 
     setupIndexPage();
