@@ -119,4 +119,5 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
           name: dist
-          path: /home/runner/work/dufs/dufs/
+          #path: /home/runner/work/dufs/dufs/
+          path: ./dist
