@@ -299,17 +299,17 @@ function renderPathsTableHead() {
     {
       name: "name",
       props: `colspan="2"`,
-      text: "Name",
+      text: "名称",
     },
     {
       name: "mtime",
       props: ``,
-      text: "Last Modified",
+      text: "最后更新时间",
     },
     {
       name: "size",
       props: ``,
-      text: "Size",
+      text: "大小",
     }
   ];
   $pathsTableHead.insertAdjacentHTML("beforeend", `
