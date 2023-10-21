@@ -235,7 +235,8 @@ fn options_dir(server: TestServer) -> Result<(), Error> {
     assert_eq!(resp.status(), 200);
     assert_eq!(
         resp.headers().get("allow").unwrap(),
-        "GET,HEAD,PUT,OPTIONS,DELETE,PROPFIND,COPY,MOVE"
+        #"GET,HEAD,PUT,OPTIONS,DELETE,PROPFIND,COPY,MOVE"
+        "GET"
     );
     assert_eq!(resp.headers().get("dav").unwrap(), "1,2");
     Ok(())
