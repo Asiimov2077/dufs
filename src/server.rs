@@ -1542,7 +1542,7 @@ fn is_hidden(hidden: &[String], file_name: &str, is_dir_type: bool) -> bool {
 fn set_webdav_headers(res: &mut Response) {
     res.headers_mut().insert(
         "Allow",
-        HeaderValue::from_static("GET,HEAD,PUT,OPTIONS,DELETE,PROPFIND,COPY,MOVE"),
+        HeaderValue::from_static("GET"),
     );
     res.headers_mut()
         .insert("DAV", HeaderValue::from_static("1,2"));
